@@ -1,10 +1,4 @@
 /* Custom properties/variables  */
-:root {
-  --main-white: #f0f0f0;
-  --main-gray: #323437;
-  --main-image: url(#ffffff);
-  --main-gray: url(#ff7f50);
-}
 
 aside h1{
   writing-mode: vertical-rl;
@@ -14,8 +8,8 @@ aside h1{
   background-color: #323437;
   color: orange;
   padding: 30px;
-  margin: 100 0 10px 0;
-  line-height: 12px;
+  margin: 180 0 10px 0;
+  line-height: 40px;
   position: fixed;
   border-width: 1px;
   border-radius: 20px 0 0 20px;
@@ -32,11 +26,11 @@ box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
 }
 
 /* box-sizing and font sizing */
-*,
+/**,
 *::before,
 *::after {
   box-sizing: inherit;
-}
+}*/
 
 html {
   box-sizing: border-box;
@@ -88,11 +82,11 @@ html {
 /* Base styles */
 
 body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem; /* 18px */
-  font-weight: 400;
+ /* font-family: 'Poppins', sans-serif;*/
+  /*font-size: 1.8rem; /* 18px */
+  /*font-weight: 400;
   line-height: 1.4;
-  color: var(--main-white);
+  color: var(--main-white);*/
   background-image: url(forportfolio.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,21 +113,37 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--main-white);
+  color: #fff;
 }
 
 img {
-  display: block;
+  display: flex;
   width: 100%;
 }
 
 /* nav */
+#welcome-section,
+#projects,
+#certificates,
+  #contact  {padding-top:150px;}
+
+
+#profile-img{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+border: 10px solid;
+border-color: orange;
+box-shadow: 10px 10px 10px rgba(255,255,255,0.3);
+/*box-shadow: -30px 30px 30px rgba(0,0,0,0.3);*/
+z-index: 1;
+}
 
 .nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   position: fixed;
-  padding: 15px;
+  padding: 4px;
   top: 0;
   left: 0;
   width: 100%;
@@ -142,11 +152,13 @@ img {
   background-size: cover;
   box-shadow: 10px 10px 10px rgba(255,255,255,0.3);
   border-radius: 0 0 20px 20px;
+  line-height: 40px;
 }
 
 .nav-list {
   display: flex;
   margin-right: 2rem;
+  justify-content: space-between;
 }
 
 @media (max-width: 28.75em) {
@@ -155,14 +167,14 @@ img {
   }
 
   .nav-list {
-    margin: 0 1rem;
+    margin: 1rem;
   }
 }
 
 .nav-list a {
   display: block;
   font-size: 2.2rem;
-  padding: 2rem;
+  padding: 2.5rem;
   color: #fff;
   background: linear-gradient(#262626, orange);
   border-radius: 0 0 20px 20px;
@@ -180,21 +192,11 @@ img {
 }
 
 /* Welcome section */
-#profile-img{
-width: 10%;
-height: auto;
-position: relative;
-border-radius: 50%;
-margin: auto;
-border: 10px solid;
-border-color: orange;
-/*box-shadow: 10px 10px 10px rgba(255,255,255,0.3);*/
-box-shadow: -30px 30px 30px rgba(0,0,0,0.3);
-}
 
 .course-image {
   width: 8%;
   height: auto;
+  padding: 2rem;
   position: relative;
   margin-left: 45%;
   text-shadow: 2px 2px 1px #1f1f1f;
@@ -207,7 +209,8 @@ box-shadow: -30px 30px 30px rgba(0,0,0,0.3);
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
+  background-image: linear-gradient(to top, rgba(255,165,0,0), rgba(255,165,0,1));
   /*background: linear-gradient(#1f1f21, #3f3f40, #616163);*/
   /*background-image: url(forportfolio.svg);
   background-repeat: no-repeat;
@@ -229,11 +232,15 @@ box-shadow: -30px 30px 30px rgba(0,0,0,0.3);
 /* Projects section */
 
 .projects-section, .certificates-section {
+  padding-top: 20%;
+  width: 100vw;
+  height: auto;
   text-align: center;
   padding: 10rem 2rem;
+  background-image: linear-gradient(to top, rgba(255,165,0,0), rgba(255,165,0,1));
   /*background: var(--main-blue);*/
-  background-repeat: repeat-x;
-  background-size: cover;
+  /*background-repeat: repeat-x;
+  background-size: cover;*/
 }
 
 .projects-section, .certificates-section-header, 
@@ -326,9 +333,9 @@ box-shadow: -30px 30px 30px rgba(0,0,0,0.3);
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 80vh;
+  height: 50vh;
   padding: 0 2rem;
-  background: var(--main-gray);
+  background-image: linear-gradient(to top, rgba(255,201,102,0), rgba(255,201,102,1));
 }
 
 .contact-section-header > h2 {
@@ -355,14 +362,24 @@ box-shadow: -30px 30px 30px rgba(0,0,0,0.3);
 }
 
 .contact-details {
-  font-size: 2.4rem;
+  font-size: 5rem;
   text-shadow: 2px 2px 1px #1f1f1f;
   transition: transform 0.3s ease-out;
+  padding: 4rem;
+  box-shadow: inset 0 0 0 orange;
+-webkit-transition: ease-out 0.8s;
+-moz-transition: ease-out 0.8s;
+transition: ease-out 0.8s;
 }
 
 .contact-details:hover {
-  transform: translateY(8px);
+  color: orange;
+  box-shadow: inset 400px 0 0 0 #454545;
+  border-radius: 50%;
 }
+
+
+
 
 /* Footer */
 
@@ -370,7 +387,7 @@ footer {
   font-weight: 300;
   display: flex;
   justify-content: space-between;
-  padding: 2.5rem;
+  padding: .5rem;
   background-image: url(triangle.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -383,12 +400,12 @@ footer {
   height: 40px;
 }
 
-footer > p {
+/*footer > p {
   padding: 10px;
   margin: .5rem;
   text-align: center;
   background: linear-gradient(#262626, orange);
-  border-radius: 0 0 20px 20px;
+  border-radius: 20px 20px 0 0;
   line-height: 45px;
 }
 
@@ -401,7 +418,11 @@ footer i {
     flex-direction: row;
     text-align: center;
   }
-}
+}*/
+
+
+
+
 /*scrollbar*/
 /* width */
 ::-webkit-scrollbar {
@@ -425,6 +446,3 @@ footer i {
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000; 
 }
-
-
-:
