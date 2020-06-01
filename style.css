@@ -5,7 +5,7 @@ aside h1{
   border-style: solid;
   /*border-color: #f00;*/
   /*text-transform: uppercase;*/
-  background-color: #323437;
+  background-color: #ac3b61;
   color: orange;
   padding: 30px;
   margin: 180 0 10px 0;
@@ -41,6 +41,7 @@ html {
   */
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* A few media query to set some font sizes at different screen sizes.
@@ -155,6 +156,10 @@ z-index: 1;
   line-height: 40px;
 }
 
+footer:hover, .nav:hover {
+  background-image: url(trianglepurple.svg);
+}
+
 .nav-list {
   display: flex;
   margin-right: 2rem;
@@ -236,19 +241,19 @@ z-index: 1;
   width: 100vw;
   height: auto;
   text-align: center;
-  padding: 10rem 2rem;
-  background-image: linear-gradient(to top, rgba(255,165,0,0), rgba(255,165,0,1));
+  padding: 10rem 0;
+  /*background-image: linear-gradient(to top, rgba(255,165,0,0), rgba(255,165,0,1));*/
   /*background: var(--main-blue);*/
   /*background-repeat: repeat-x;
   background-size: cover;*/
 }
 
-.projects-section, .certificates-section-header, 
+/*.projects-section, .certificates-section-header, 
 .certificates-section-header {
   max-width: 640px;
-  margin: 0 auto 6rem auto;
+  margin: 0 auto 6rem auto;*/
   /*border-bottom: 0.2rem solid var(--main-white);*/
-}
+/*}*/
 
 @media (max-width: 28.75em) {
   .projects-section, .certificates-section-header, 
@@ -334,8 +339,8 @@ z-index: 1;
   text-align: center;
   width: 100%;
   height: 50vh;
-  padding: 0 2rem;
-  background-image: linear-gradient(to top, rgba(255,201,102,0), rgba(255,201,102,1));
+
+  /*background-image: linear-gradient(to top, rgba(255,201,102,0), rgba(255,201,102,1));*/
 }
 
 .contact-section-header > h2 {
@@ -366,14 +371,15 @@ z-index: 1;
   text-shadow: 2px 2px 1px #1f1f1f;
   transition: transform 0.3s ease-out;
   padding: 4rem;
-  box-shadow: inset 0 0 0 orange;
+  box-shadow: inset 0 0 0 #ac3b61;
 -webkit-transition: ease-out 0.8s;
 -moz-transition: ease-out 0.8s;
 transition: ease-out 0.8s;
+color: orange;
 }
 
 .contact-details:hover {
-  color: orange;
+  color: #fff;
   box-shadow: inset 400px 0 0 0 #454545;
   border-radius: 50%;
 }
@@ -384,41 +390,50 @@ transition: ease-out 0.8s;
 /* Footer */
 
 footer {
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 2.5rem;
   font-weight: 300;
+  font-size: 3rem;
   display: flex;
-  justify-content: space-between;
-  padding: .5rem;
+  padding: 3.5rem;
   background-image: url(triangle.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: -10px -10px 10px rgba(255,255,255,0.3);
-  border-radius: 20px 20px 0 0;
+  /*background-image: linear-gradient(to top, rgba(255,165,0,0), rgba(255,165,0,1));*/
+  box-shadow: 0 -10px 10px rgba(255,255,255,0.3);
+  /*border-radius: 20px 20px 0 0;*/
 }
 
-.footer-image{
-  width: 40px;
-  height: 40px;
-}
-
-/*footer > p {
-  padding: 10px;
-  margin: .5rem;
+footer > p {
+  padding: 35px;
   text-align: center;
-  background: linear-gradient(#262626, orange);
+ /* background: linear-gradient(#262626, orange);*/
   border-radius: 20px 20px 0 0;
-  line-height: 45px;
-}
+  line-height: 5px;
+  /*vertical-align: text-top;*/
+  margin-top: -2rem;
+  margin-left: 42.5vw;
 
-footer i {
-  vertical-align: middle;
-}
+  background: #6c6d6c;
+  border-radius: 15px;
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+             15px 15px 15px rgba(0,0,0,0.1),
+            inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+            inset 5px 5px 5px rgba(0,0,0,0.1);
+            text-shadow: 1px 1px 2px #000;
+  }
+
+
 
 @media (max-width: 28.75em) {
   footer {
     flex-direction: row;
     text-align: center;
   }
-}*/
+}
 
 
 
@@ -426,7 +441,7 @@ footer i {
 /*scrollbar*/
 /* width */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 10px;
 }
 
 /* Track */
@@ -437,12 +452,15 @@ footer i {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: red; 
+  background: #ac3b61; 
   border-radius: 10px;
 }
 
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
+  background: orange; 
 }
+::-webkit-scrollbar-track:hover {
+ background: #ac3b61; 
+  }
+
