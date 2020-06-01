@@ -2,10 +2,25 @@
 :root {
   --main-white: #f0f0f0;
   --main-red: #be3144;
-  --main-blue: #45567d;
-  --main-gray: #303841;
+  --main-blue: url(#ffffff);
+  --main-gray: url(#ff7f50);
 }
 
+aside h1{
+  writing-mode: vertical-rl;
+  border-style: solid;
+  border-color: white;
+  /*text-transform: uppercase;*/
+  background-color: #f00;
+  color: #fff;
+  padding: 30px;
+  margin: 0 0 10px 0;
+  line-height: 12px;
+  position: fixed;
+  border-radius: 20px 0 0 20px;
+  -webkit-transform: rotate(-180deg);
+
+}
 /* Base reset */
 * {
   margin: 0;
@@ -117,7 +132,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--main-red);
+  /*background: var(--main-red);*/
 
 }
 
@@ -192,6 +207,8 @@ border: 10px solid yellow;
   text-align: center;
   padding: 10rem 2rem;
   background: var(--main-blue);
+  background-repeat: repeat-x;
+  background-size: cover;
 }
 
 .projects-section, .certificates-section-header, 
