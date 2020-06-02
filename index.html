@@ -1,236 +1,149 @@
-<link rel="icon" type="text/css" href="favicon.svg">
-<link rel="stylesheet" type="text/css" href="style.css">
-<link
-  rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-  crossorigin="anonymous"
-/>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>RT-Portfolio.</title>
+        <link rel="icon" href="favicon.svg" />
+        <link rel="stylesheet" type="text/css" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Headland+One&family=Kumar+One&family=Libre+Barcode+128+Text&family=Londrina+Shadow&family=Monofett&family=Oleo+Script:wght@400;700&family=Syncopate:wght@400;700&family=Vast+Shadow&display=swap" rel="stylesheet">
-
+<!-- Google font link. -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+              
+<!--social media icon links -->          
+        <link href="https://fonts.googleapis.com/css2?family=Headland+One&family=Kumar+One&family=Libre+Barcode+128+Text&family=Londrina+Shadow&family=Monofett&family=Oleo+Script:wght@400;700&family=Syncopate:wght@400;700&family=Vast+Shadow&display=swap" rel="stylesheet">
+    </head>
+    <body>
 
 <!-- side word tag -->
-<aside>
-  <h1>Portfolio</h1>
-</aside>
+	<aside><h1>Portfolio</h1></aside>
+
+
 <!-- START NAV -->
+	<nav id="navbar" class="nav">
+  		<img id="profile-img" src="https://media-exp1.licdn.com/dms/image/C5603AQGQb9XT4gytig/profile-displayphoto-shrink_200_200/0?e=1596067200&v=beta&t=6x9tT9mjM4z_Te8MzYVw-Q3mC3PVaLdwHn5QdFu7IxQ">
 
-<nav id="navbar" class="nav"> <!-- User Story #6: My portfolio should have a navbar with an id of navbar. -->
-  <!-- User Story #11: The navbar should always be at the top of the viewport. -->
-  <img id="profile-img" src="https://media-exp1.licdn.com/dms/image/C5603AQGQb9XT4gytig/profile-displayphoto-shrink_200_200/0?e=1596067200&v=beta&t=6x9tT9mjM4z_Te8MzYVw-Q3mC3PVaLdwHn5QdFu7IxQ">
-
-  <ul class="nav-list">
-    <li>
-      <a href="#welcome-section">i</a> <!-- User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page. -->
-    </li>
-    <li>
-      <a href="#projects">Work</a>
-    </li>
-    <li>
-      <a href="#certificates">Certificates</a>
-    </li>
-    <li>
-      <a href="#contact">Contact</a>
-    </li>
-  </ul>
-</nav>
-
+		  <ul class="nav-list">
+		    <li><a href="#welcome-section">i</a></li>
+		    <li><a href="#projects">Work</a></li>
+		    <li><a href="#certificates">Certificates</a></li>
+		    <li><a href="#contact">Contact</a></li>
+		  </ul>
+	</nav>
 <!-- END NAV -->
 
+
 <!-- START WELCOME SECTION -->
+	<section id="welcome-section" class="welcome-section"> 
+		  <h1>Hi! My name is Rob Thapa.</h1> 
+		  <p>I am a web developer</p>
+		  <h3 class="info-details">Areas of Expertise:</h3>
+		  <ul type="none">
+		      <li>HTML</li>
+		      <li>CSS</li>
+		      <li>SVG</li>
+		      <li>Sketch & Design Art</li>
+		  </ul>
+		  <h3>Completed Web-Development Courses from:</h3>
+		  <ul class="info-details" type="none">
+		      <li><a href="https://www.udemy.com/" target="_blank" class="info-link">
+		      	<img class="course-image" src="https://about.udemy.com/wp-content/uploads/2016/07/about-default.png" alt="Udemy"/></a></li>
 
-<section id="welcome-section" class="welcome-section"> 
-  <h1>Hi! My name is Rob Thapa.</h1> 
-  <p>I am a web developer</p>
-  <h3 class="info-details">Areas of Expertise:</h3>
-       <ul type="none">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>SVG</li>
-      <li>Sketch Art</li>
-      </ul>
-      <h3>Completed Web-Development Courses from</h3>
-      <ul class="info-details" type="none">
-      <li><img
-        class="course-image"
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/UdemyLogo.svg/1280px-UdemyLogo.svg.png"
-        alt="Udemy"
-      /></li>
-      <li><img
-        class="course-image"
-        src="https://cdn.rawgit.com/Deftwun/e3756a8b518cbb354425/raw/6584db8babd6cbc4ecb35ed36f0d184a506b979e/free-code-camp-logo.svg"
-        alt="freecodecamp"
-      /></a>
-  </p></li>
-      </ul>
-</section>
-
+		      <li><a href="https://www.freecodecamp.org/" target="_blank" class="info-link">
+		      	<img class="course-image" src="https://cdn.rawgit.com/Deftwun/e3756a8b518cbb354425/raw/6584db8babd6cbc4ecb35ed36f0d184a506b979e/free-code-camp-logo.svg" alt="freecodecamp"/></a></p></li>
+		  </ul>
+	</section>
 <!-- END WELCOME SECTION -->
 
 <!-- START PROJECTS SECTION -->
+	<section id="projects" class="projects-section"> 
+		<h2 class="projects-section-header">These are some of my projects</h2>
+		<div class="projects-grid">
+			<div class="project-module">
+			    <a href="https://rob2rhyme.github.io/Tribute-to-Putali-Bajay/" target="_blank" class="project project-tile"> 
+			      <img class="project-image" src="tribute-page.jpg" alt="project"/>
+				  <p class="grid-title">Tribute Page</p></a>
+			</div>
 
-<section id="projects" class="projects-section"> 
-  <h2 class="projects-section-header">These are some of my projects</h2>
-  <div class="projects-grid">
-    <div class="module">
-    <a
-      href="https://rob2rhyme.github.io/Tribute-to-Putali-Bajay/"
-      target="_blank"
-      class="project project-tile"> 
-      <img
-        class="project-image"
-        src="tribute-page.jpg"
-        alt="project"/>
-      <p class="project-title">Tribute Page</p>
-    </a>
-  </div>
-  <div class="module">
-    <a
-      href="https://rob2rhyme.github.io/Customer-Satisfaction-Survey-Form/"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="customer-satisfaction-survey.jpg"
-        alt="project"
-      />
-      <p class="project-title">
-        Customer Satisfaction Survey Form.
-      </p>
-    </a>
-  </div>
-  <div class="module">
-    <a
-      href="https://rob2rhyme.github.io/Product-Landing-Page/"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="product-landing-page.jpg"
-        alt="project"
-      />
-      <p class="project-title">
-        Product Landing Page
-      </p>
-    </a>
-  </div>
-  <div class="module">
-    <a
-      href="https://rob2rhyme.github.io/Technical-Documentation-Page/"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="technical-doc-page.jpg"
-        alt="project"
-      />
-      <p class="project-title">
-        CSS Flexbox Documentation
-      </p>
-    </a>
-  </div>
-</div>
-</section>
+			<div class="project-module">
+			    <a href="https://rob2rhyme.github.io/Customer-Satisfaction-Survey-Form/" target="_blank" class="project project-tile">
+			      <img class="project-image" src="customer-satisfaction-survey.jpg" alt="project"/>
+				  <p class="grid-title">Survey Form.</p></a>
+			</div>
 
+			<div class="project-module">
+			    <a href="https://rob2rhyme.github.io/Product-Landing-Page/" target="_blank" class="project project-tile">
+			      <img class="project-image" src="product-landing-page.jpg" alt="project"/>
+			      <p class="grid-title">Product Landing Page</p></a>
+			</div>
+
+			<div class="project-module">
+			    <a href="https://rob2rhyme.github.io/Technical-Documentation-Page/" target="_blank" class="project project-tile">
+			      <img class="project-image" src="technical-doc-page.jpg" alt="project"/>
+			      <p class="grid-title">CSS Flexbox Doc.</p></a>
+			</div>
+		</div>
+	</section>
 <!-- END PROJECTS SECTION -->
 
+
 <!-- START CERTIFICATE SECTION -->
-<section id="certificates" class="certificates-section">
-  <h2 class="certificates-section-header">These are my certificates earned.</h2>
+	<section id="certificates" class="certificates-section">
+  			<h2 class="certificates-section-header">These are my certificates earned.</h2>
 
-  <div class="certificates-grid">
-    <div class="module">
-    <a
-      href="https://www.udemy.com/certificate/UC-d231f2b4-c840-4e91-bdbd-e4ed2e74d5d0/"
-      target="_blank"
-      class="certificate certificate-tile"
-    >
-      <img
-        class="certificate-image"
-        src="WebDev Bootcamp Certificate.jpg"
-        alt="Certificate"
-      />
-      <p class="certificate-title">
-        WebDev Bootcamp Certificate
-      </p></a>
-    </div>
+  			<div class="certificates-grid">
+    			<div class="cert-module">
+    				<a href="https://www.udemy.com/certificate/UC-d231f2b4-c840-4e91-bdbd-e4ed2e74d5d0/" target="_blank" class="certificate certificate-tile">
+      				<img class="certificate-image" src="WebDev Bootcamp Certificate.jpg" alt="Certificate"/>
+      				<p class="grid-title">Web-Dev Bootcamp</p></a>
+    			</div>
 
-    <div class="module">
-      <a
-      href="https://www.freecodecamp.org/certification/rob2rhyme/responsive-web-design"
-      target="_blank"
-      class="certificate certificate-tile"
-    >
-      <img
-        class="certificate-image"
-        src="ResponsiveWebDesign.png"
-        alt="Certificate"
-      />
-      <p class="certificate-title">
-        Responsive Web Design
-      </p></a>
-    </div>
-  </div>
+    			<div class="cert-module">
+      				<a href="https://www.freecodecamp.org/certification/rob2rhyme/responsive-web-design" target="_blank" class="certificate certificate-tile">
+      				<img class="certificate-image" src="ResponsiveWebDesign.png" alt="Certificate"/>
+      				<p class="grid-title">Responsive Web Design</p></a>
+    			</div>
+  			</div>
+	</section>
 <!-- END CERTIFICATE SECTION -->
 
 <!-- START CONTACT SECTION -->
+	<section id="contact" class="contact-section">
+			<div class="contact-section-header">
+			    <h2>Find Me on...</h2>
+			</div>
+			<div class="contact-links">
+			   <a id="profile-link"
+			      href="https://github.com/rob2rhyme"
+			      target="_blank"
+			      class="btn contact-details"
+			      alt="GitHub"><i class="fab fa-github"></i></a> 
 
-<section id="contact" class="contact-section">
-  <div class="contact-section-header">
-    <h2>Find Me on...</h2>
-  </div>
-  <div class="contact-links">
-    <a
-      id="profile-link"
-      href="https://github.com/rob2rhyme"
-      target="_blank"
-      class="btn contact-details"
-      alt="GitHub"
-      ><i class="fab fa-github"></i></a
-    > 
-    <a
-      href="https://www.freecodecamp.org/rob2rhyme"
-      target="_blank"
-      class="btn contact-details"
-      alt="freecodecamp"
-      ><i class="fab fa-free-code-camp"></i></a>
+			   <a href="https://www.freecodecamp.org/rob2rhyme"
+			      target="_blank"
+			      class="btn contact-details"
+			      alt="freecodecamp"><i class="fab fa-free-code-camp"></i></a>
 
-      <a
-      href="https://www.linkedin.com/in/rob-t-0521a936/"
-      target="_blank"
-      class="btn contact-details"
-      alt="linkedin"
-      ><i class="social-icon fab fa-linkedin"></i></a>
+			   <a href="https://www.linkedin.com/in/rob-t-0521a936/"
+			      target="_blank"
+			      class="btn contact-details"
+			      alt="linkedin" ><i class="social-icon fab fa-linkedin"></i></a>
 
-    <a
-      href="https://twitter.com/thapa4t"
-      target="_blank"
-      class="btn contact-details"
-      alt="email me"
-      ><i class="fab fa-twitter"></i></a>
-    <a href="mailto:thapa4r@yahoo.com" class="btn contact-details"
-      ><i class="fas fa-at"></i></a
-    >
-    <a href="tel:6037171285" class="btn contact-details" alt="call me"
-      ><i class="fas fa-mobile-alt"></i></a
-    >
-  </div>
-</section>
+			   <a href="https://twitter.com/thapa4t"
+			      target="_blank"
+			      class="btn contact-details"
+			      alt="email me"><i class="fab fa-twitter"></i></a>
 
+			   <a href="mailto:thapa4r@yahoo.com" class="btn contact-details"><i class="fas fa-at"></i></a>
+
+			   <a href="tel:6037171285" class="btn contact-details" alt="call me"><i class="fas fa-mobile-alt"></i></a>
+			</div>
+	</section>
 <!-- END CONTACT SECTION -->
 
 <!-- START FOOTER SECTION -->
-
-<footer>
-  <p>
-    &copy;Rob Thapa 2020.
-  </p>
-</footer>
-
-
-
+	<footer>
+	  <p>&copy;Rob Thapa 2020.</p>
+	</footer>
 <!-- END FOOTER SECTION -->
+	</body>
+</html>
