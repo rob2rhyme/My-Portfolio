@@ -1,154 +1,136 @@
 /* Custom properties/variables  */
 :root {
-  --main-white: #fff;
-  --main-purple: #ac3b61;
-  --main-gray: #96928f;
-  --main-orange: orange;
-}
+	  --main-white: #dbdfe0;
+	  --main-purple: #ac3b61;
+	  --main-lightgray: #cfd4d6;
+	  --main-orange: orange;
+	  --main-backgroundgray: #6c6d6c;}
 
 aside h1{
-  writing-mode: vertical-rl;
-  border-style: solid;
-  font-family: 'Syncopate', sans-serif;
-  font-size: 2.5rem;
-  background-color: var(--main-purple);
-  color: var(--main-orange);
-  padding: 20px;
-  margin: 180 0 10px 0;
-  line-height: 40px;
-  position: fixed;
-  border-width: 1px;
-  border-radius: 20px 0 0 20px;
-  -webkit-transform: rotate(-180deg);
-box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
-             15px 15px 15px rgba(0,0,0,0.1),
-            inset -5px -5px 5px rgba(255, 255, 255, 0.2),
-            inset 5px 5px 5px rgba(0,0,0,0.1);
-}
+	  writing-mode: vertical-rl;
+	  border-style: solid;
+	  font-family: 'Syncopate', sans-serif;
+	  font-size: 2.5rem;
+	  background-color: var(--main-purple);
+	  color: var(--main-orange);
+	  padding: 20px;
+	  margin: 180 0 10px 0;
+	  line-height: 40px;
+	  position: fixed;
+	  border-width: 1px;
+	  border-radius: 20px 0 0 20px;
+	  -webkit-transform: rotate(-180deg);
+	  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+	             15px 15px 15px rgba(0,0,0,0.1),
+	            inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+	            inset 5px 5px 5px rgba(0,0,0,0.1);}
+
 /* Base reset */
 * {
-  margin: 0;
-  padding: 0;
-}
+	  margin: 0;
+	  padding: 0;}
+
 
 html {
-  box-sizing: border-box;
+	  box-sizing: border-box;
 
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
+	  font-size: 62.5%;
+	  scroll-behavior: smooth;
+	  overflow-x: hidden;}
 
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
-  html {
-    font-size: 60%;
-  }
-}
+  html {font-size: 60%;}}
 
 /* 980px / 16px = 61.25em */
 @media (max-width: 61.25em) {
-  html {
-    font-size: 58%;
-  }
-}
+  html {font-size: 58%;}}
 
 /* 460px / 16px = 28.75em */
 @media (max-width: 28.75em) {
-  html {
-    font-size: 55%;
-  }
-}
+  html {font-size: 55%;}}
 
 /* Base styles */
 
 body {
-  background-image: url(forportfolio.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+	  background-image: url(forportfolio.svg);
+	  background-repeat: no-repeat;
+	  background-size: cover;}
 
 h1,
 h2 {
-  font-weight: 700;
-  text-align: center;
-}
+	  font-weight: 700;
+	  text-align: center;}
 
 h1 {
-  font-family: 'Oleo Script', cursive;
-  font-size: 6rem;
-}
+	  font-family: 'Oleo Script', cursive;
+	  font-size: 6rem;}
 
 h2 {
-  font-size: 4.2rem;
-  font-family: 'Headland One', serif;
-  text-shadow: 1px 1px 2px #ac3b61;
-}
+	  font-size: 4.2rem;
+	  font-family: 'Headland One', serif;
+	  text-shadow: 1px 1px 2px #ac3b61;}
+
 h3 {
- font-family: 'Oleo Script', cursive;
-  font-size: 2.5rem;
-  color: var(--main-white);
-  text-shadow: #000 1px 0 10px;
-}
+	 	font-family: 'Oleo Script', cursive;
+	  	font-size: 3rem;
+	  	color: var(--main-white);
+	  	text-shadow: #000 1px 0 10px;}
 
 ul {
-  list-style: none;
-  font-size: 2rem;
-}
+  	list-style: none;
+  	font-size: 2rem;}
 
 a {
-  text-decoration: none;
-  color: var(--main-white);
-}
+	  text-decoration: none;
+	  color: var(--main-white);}
 
 img {
-  display: flex;
-  width: 100%;
-}
+	  display: flex;
+	  width: 100%;}
+
 h1, h2, footer {
-  color: var(--main-white);
- text-shadow: #000 1px 0 10px;
-}
-section > p, li{
-  color: var(--main-gray);
-  text-shadow: 1px 1px 2px #000;
-}
+	  color: var(--main-white);
+	  text-shadow: #000 1px 0 10px;}
+
+section > p, li {
+	  color: var(--main-lightgray);
+	  text-shadow: 1px 1px 2px #000;}
 
 /* nav */
 #welcome-section,
 #projects,
 #certificates,
-  #contact  {padding-top:150px;}
+#contact  {padding-top:150px;}
 
 
 #profile-img{
-width: 100px;
-height: 100px;
-border-radius: 50%;
-border: 10px solid;
-border-color: var(--main-orange);
-box-shadow: 10px 10px 10px rgba(255,255,255,0.3);
-z-index: 1;
-}
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		border: 10px solid;
+		border-color: var(--main-orange);
+		box-shadow: 10px 10px 10px rgba(255,255,255,0.3);
+		z-index: 1;}
 
 .nav {
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  padding: 4px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-image: url(triangle.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: 10px 10px 10px rgba(255,255,255,0.3);
-  border-radius: 0 0 20px 20px;
-  line-height: 40px;
-}
+		  display: flex;
+		  justify-content: space-between;
+		  position: fixed;
+		  padding: 4px;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  background-image: url(triangle.svg);
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  box-shadow: 1px 1px 10px rgba(255,255,255,0.3);
+		  border-radius: 0 0 20px 20px;
+		  line-height: 40px;}
 
-footer:hover, .nav:hover {
+.nav:hover {
   background-image: url(trianglepurple.svg);
+  box-shadow: 5px 5px 10px rgba(172,59,97,0.3);
 }
 
 .nav-list {
@@ -190,7 +172,7 @@ footer:hover, .nav:hover {
 /* Welcome section */
 
 .course-image {
-  width: 8%;
+  width: 10%;
   height: auto;
   padding: 2rem;
   position: relative;
@@ -208,6 +190,7 @@ footer:hover, .nav:hover {
   width: 100%;
   height: 80vh;
   background-image: linear-gradient(to top, rgba(255,165,0,0), rgba(255,165,0,1));
+  box-shadow: 1px 1px 10px rgba(255,255,255,0.3);
 }  
 
 .welcome-section > p {
@@ -220,38 +203,68 @@ footer:hover, .nav:hover {
   text-align: left;
 }
 
-
 /* Projects section */
-
-
-.projects-grid, .certificates-grid {
+.projects-grid {
   /* Grid Fallback */
+  margin: 50px auto;
   width: 80%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  /* align-self: center; */
+
   
   /* Supports Grid */
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-auto-rows: minmax(150px, auto);
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-auto-rows: minmax(10vh, auto);
   grid-gap: 4em;
 }
 
-.module {
-  background: #eaeaea;
+.project-module, .cert-module {
+  padding: 25px;
   display: flex;
   align-items: center;
-  justify-content: center;
   height: auto;
-  flex: 1 1 200px;
+  flex: 1 1 auto;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 50px auto;
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 30.625em) {
+  .certificates-section {
+    padding: 6rem 1rem;
+  }
+
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* If Grid is supported, remove the margin we set for the fallback */
 @supports (display: grid) {
-  .module {
+  .cert-module, .project-module {
     margin: auto;
   }
 }
+
+.grid-title{
+	font-family: 'Syncopate', sans-serif;
+	padding-top: 15px; 
+	text-align: center;
+	font-size: 2rem;
+	color: var(--main-white);
+}
+
 
 .contact-section {
   display: flex;
@@ -261,6 +274,7 @@ footer:hover, .nav:hover {
   text-align: center;
   width: 100%;
   height: 100vh;
+  box-shadow: 0 -5px 10px rgba(255,255,255,0.3);
 }
 
 .contact-section-header > h2 {
@@ -319,25 +333,20 @@ footer {
   background-image: url(triangle.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 0 -10px 10px rgba(255,255,255,0.3);
+  box-shadow: 0 -5px 10px rgba(255,255,255,0.3);
 }
+footer:hover{
+background-image: url(trianglepurple.svg);
+  box-shadow: 0 -5px 10px rgba(172,59,97,0.3);}
 
 footer > p {
   padding: 35px;
   text-align: center;
   border-radius: 20px 20px 0 0;
   line-height: 5px;
-  margin-top: -2rem;
-  margin-left: 40vw;
+  margin: -2rem auto;
  font-family: 'Libre Barcode 128 Text', cursive;
-
-  background: #6c6d6c;
   border-radius: 15px;
-  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
-             15px 15px 15px rgba(0,0,0,0.1),
-            inset -5px -5px 5px rgba(255, 255, 255, 0.2),
-            inset 5px 5px 5px rgba(0,0,0,0.1);
-            text-shadow: 1px 1px 2px #000;
   }
 
 @media (max-width: 28.75em) {
@@ -347,8 +356,21 @@ footer > p {
   }
 }
 
+/*shadow effects on tiles*/
+footer > p, 
+.cert-module, 
+.project-module {
+	background: var(--main-backgroundgray);
+	box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+             15px 15px 15px rgba(0,0,0,0.1),
+            inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+            inset 5px 5px 5px rgba(0,0,0,0.1);
+            text-shadow: 1px 1px 2px #000;
+}
 
-
+.cert-module:hover, .project-module:hover {
+background: var(--main-purple);
+}
 
 /*scrollbar*/
 /* width */
@@ -375,3 +397,4 @@ footer > p {
 ::-webkit-scrollbar-track:hover {
  background: var(--main-purple);
   }
+
