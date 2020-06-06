@@ -16,7 +16,7 @@ aside h1{
 	  background-color: var(--main-purple);
 	  color: var(--main-orange);
 	  padding: 20px 5px;
-	  margin: 150px 5px 2px 0;
+	  margin: 150px 10px 2px 0;
 	  line-height: 40px;
 	  position: fixed;
 	  border-width: 1px;
@@ -263,6 +263,7 @@ z-index: 1;
   padding: 2rem;
   position: relative;
   margin-left: 45%;
+  border-radius: 50%;
   background: linear-gradient(145deg, #4a4f50, #585e5f);
   box-shadow:  6px 6px 8px #212324, 
              -6px -6px 8px #838d8e;
