@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Link Art Page</title>
+        <link rel="icon" href="favicon.svg" />
+
+<!-- Google font link. -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+              
+<!--social media icon links -->          
+        <link href="https://fonts.googleapis.com/css2?family=Headland+One&family=Kumar+One&family=Libre+Barcode+128+Text&family=Londrina+Shadow&family=Monofett&family=Oleo+Script:wght@400;700&family=Syncopate:wght@400;700&family=Vast+Shadow&display=swap" rel="stylesheet">
+    </head>
+    <style>
+
+    	/* Custom properties/variables  */
+:root {
+    --main-white: #dbdfe0;
+    --main-purple: #ac3b61;
+    --main-lightgray: #cfd4d6;
+    --main-orange: orange;
+    --main-backgroundgray: #6c6d6c;}
+
+* {
+    margin: 0;
+    padding: 0;}
+
+
+html {
+    box-sizing: border-box;
+
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;}
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {font-size: 60%;}}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {font-size: 58%;}}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {font-size: 55%;}}
+
+/* Base styles */
+
+body {
+    background-image: url(forportfolio.svg);
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+h2 {
+    font-weight: 700;
+    text-align: center;}
+
+h2 {
+    font-size: 4.2rem;
+    font-family: 'Headland One', serif;
+    text-shadow: 1px 1px 2px #ac3b61;}
+
+ul {
+    list-style: none;
+    font-size: 2rem;}
+
+a {
+    text-decoration: none;
+    color: var(--main-white);}
+
+img {
+    display: flex;
+    width: 100%;}
+
+h2, footer {
+    color: var(--main-white);
+    text-shadow: #000 1px 0 10px;}
+
+section > p, li {
+    color: var(--main-lightgray);
+    text-shadow: 1px 1px 2px #000;}
+
+/* nav */
+#art-work
+ {padding-top:150px;}
+
+
+#profile-img{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+border: 5px solid;
+border-color: var(--main-orange);
+box-shadow: 28px 28px 55px #0f0f0f, 
+             -28px -28px 55px #3d3d3d;
+z-index: 1;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  padding: 4px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url(triangle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 1px 1px 10px rgba(255,255,255,0.3);
+  line-height: 40px;
+}
+
+.nav:hover {
+  background-image: url(trianglepurple.svg);
+  box-shadow: 5px 5px 10px rgba(172,59,97,0.3);
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+  justify-content: space-between;
+}
+
+@media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 1rem;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.nav-list .first {
+  border-radius: 1.5em 0 0 1.5em;
+  box-shadow:
+    0.1em 0 0 #2726267f inset,
+    -0.1em 0 0 #27262600 inset,
+    0 0.1em 0 #afa490 inset,
+    0 -0.1em 0 #ffffff3f,
+    0 0.2em 0.5em #0000007f,
+    0 -0.1em 0 #926086 inset,
+    -0.1em -0.2em 0 #ffffff7f inset,
+    0.2em 0 0 #ffffff7f inset;
+}
+
+.nav-list .first:hover {
+  border-radius: 1.5em 0 0 1.5em;
+  box-shadow:
+    0.1em 0 0 #272626af inset,
+    -0.1em 0 0 #272626 inset,
+    0 0.1em 0 #847a62 inset,
+    0 -0.1em 0 #ffffff3f,
+    0 0.1em 0 #ffffff7f,
+    0 -0.1em 0 #722257 inset,
+    -0.1em -0.2em 0 #ffffff7f inset,
+    0.2em 0 0 #ffffff7f inset;
+}
+
+.nav-list .last {
+  border-radius: 0 1.5em 1.5em 0;
+  box-shadow:
+    0 -0.1em 0 #926086 inset,
+    0.1em 0 0 #2726267f inset,
+    -0.1em 0 0 #2726267f inset,
+    0 0.1em 0 #afa490 inset,
+    -0.1em 0 0 #afa490 inset,
+    0 -0.1em 0 #ffffff3f,
+    0 0.2em 0.5em #0000007f,
+    -0.1em -0.1em 0 0.1em #ffffff7f inset;
+}
+
+.nav-list .last:hover{
+  border-radius: 0 1.5em 1.5em 0;
+  box-shadow:
+    0.1em 0 0 #272626af inset,
+    -0.1em 0 0 #272626 inset,
+    0 -0.1em 0 #722257 inset,
+    0 0.1em 0 #847a62 inset,
+    -0.1em 0 0 #847a62 inset,
+    0 -0.1em 0 #ffffff3f,
+    0 0.1em 0 #ffffff7f,
+    -0.1em -0.1em 0 0.1em #ffffff7f inset;
+}
+
+.nav-list a {
+      font-family: 'Londrina Shadow', cursive;
+      font-size: 3.5rem;
+      background-image: linear-gradient(#ffffff 33%,#414751 58%,#837b52,#c5baa1,#c3adaa);
+      border-radius: 0;
+      box-shadow:  14px 14px 28px #0f0f0f, 
+             -14px -14px 28px #3d3d3d;
+      cursor: pointer;
+      display: block;
+      margin-right: 1.5rem;
+      margin-top: 3rem;
+      margin-bottom: .5em;
+      width: 100%;
+      height: .25em;
+      transition: box-shadow 0.5s ease-in-out;
+      padding: 2.5rem 1rem;
+      padding-right: .5rem;
+      line-height: .5rem;
+      transition: padding-right 0.5s;}
+
+.nav-list a:hover {
+      background: linear-gradient(orange, #262626);
+      border-radius: 15px;
+      box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+                 15px 15px 15px rgba(0,0,0,0.1),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+                inset 5px 5px 5px rgba(0,0,0,0.1);
+      z-index: 10;
+      padding-right: 3rem;}
+
+
+@media (prefers-color-scheme: dark) {:root #e3e4e8 #5c6270, #17181c #e3e4e8;}
+  .nav-list a {box-shadow:
+      0.1em 0 0 #2726267f inset,
+      -0.1em 0 0 #27262600 inset,
+      0 0.1em 0 #afa490 inset,
+      0 -0.1em 0 #0000001f,
+      0 0.2em 0.5em #0000007f,
+      0 -0.1em 0 #926086 inset,
+      -0.1em -0.2em 0 #ffffff7f inset;}
+
+  .nav-list a:hover {
+    box-shadow:
+      0.1em 0 0 #272626af inset,
+      -0.1em 0 0 #272626af inset,
+      0 0.1em 0 #847a62 inset,
+      0 -0.1em 0 #0000007f,
+      0 0.1em 0 #0000007f,
+      0 -0.1em 0 #722257 inset,
+      -0.1em -0.2em 0 #ffffff7f inset;}
+
+/*ARTWORK SECTION START*/
+.art-module {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  height: auto;
+  flex: 1 1 auto;
+}
+
+.art-work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  height: auto;
+  max-width: 1280px;
+  margin-top: 50px;
+  margin-bottom: 10rem;
+}
+
+@media (max-width: 30.625em) {
+  .art-work-section {
+    padding: 6rem 1rem;
+  }
+
+  .art-work-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* If Grid is supported, remove the margin we set for the fallback */
+@supports (display: grid) {
+  .art-module {
+    margin: auto;
+  }
+}
+
+.grid-title{
+  font-family: 'Syncopate', sans-serif;
+  padding-top: 15px; 
+  text-align: center;
+  font-size: 2rem;
+  color: var(--main-white);
+}
+
+/*ARTWORK SECTION ENDS*/
+
+/* Footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 2.5rem;
+  font-weight: 300;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 3.5rem 0;
+  background-image: url(triangle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 -5px 10px rgba(255,255,255,0.3);
+}
+
+footer:hover{
+background-image: url(trianglepurple.svg);
+  box-shadow: 0 -5px 10px rgba(172,59,97,0.3);}
+
+footer > p {
+  padding: 35px;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+  line-height: 5px;
+  margin: -2rem auto;
+ font-family: 'Libre Barcode 128 Text', cursive;
+  border-radius: 15px;
+  }
+
+@media (max-width: 28.75em) {
+  footer {
+    flex-direction: row;
+    text-align: center;
+  }
+}
+
+/*shadow effects on tiles*/
+footer > p, 
+.art-module {
+  background: var(--main-backgroundgray);
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+             15px 15px 15px rgba(0,0,0,0.1),
+            inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+            inset 5px 5px 5px rgba(0,0,0,0.1);
+            text-shadow: 1px 1px 2px #000;
+}
+
+.art-module:hover{
+background: var(--main-purple);
+}
+
+/*scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main-purple);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-orange);
+}
+::-webkit-scrollbar-track:hover {
+ background: var(--main-purple);
+  }
+    </style>
+    <body>
+
+<!-- side word tag -->
+	<aside><h1>Portfolio</h1></aside>
+
+
+<!-- START NAV -->
+	<nav id="navbar" class="nav">
+  		<img id="profile-img" src="https://media-exp1.licdn.com/dms/image/C5603AQGQb9XT4gytig/profile-displayphoto-shrink_200_200/0?e=1596067200&v=beta&t=6x9tT9mjM4z_Te8MzYVw-Q3mC3PVaLdwHn5QdFu7IxQ">
+
+		  <ul class="nav-list">
+		    <li><a class="first" href="index.html">⬅Back to my Portfolio</a></li>
+		    <li><a class="last" href="#art-work">Top</a></li>
+		  </ul>
+	</nav>
+<!-- END NAV -->
+
+<!-- START ARTWORK SECTION -->
+	<section id="art-work" class="art-work-section">
+  			<h2 class="art-work-section-header">Welcome to my Sketch Art Page.</h2>
+
+  			<div class="art-work-grid">
+    			<div class="art-module">
+    				<a href="eyes_link.pdf" target="_blank" class="art art-tile">
+      				<img class="art-image" src="thumbnail_eyes.PNG" alt="art-work"/>
+      				<p class="grid-title">Intense Eye Contact</p></a>
+    			</div>
+
+    			<div class="art-module">
+      				<a href="amoie_link.pdf" target="_blank" class="art art-tile">
+      				<img class="art-image" src="thumbnail_amoie.PNG" alt="art-work"/>
+      				<p class="grid-title">Grandma's Portrait</p></a>
+    			</div>
+
+    			<div id="space" class="art-module">
+    				<a href="treadmill_link.pdf" target="_blank" class="art art-tile">
+      				<img class="art-image" src="thumbnail_treadmill.PNG" alt="art-work"/>
+      				<p class="grid-title">Exercise Portrait</p></a>
+    			</div>
+
+    			<div id="more" class="art-module">
+    				<a href="babyPicture_link.pdf" target="_blank" class="art art-tile">
+      				<img class="art-image" src="thumbnail_babies.PNG" alt="art-work"/>
+      				<p class="grid-title">Babies on pile.</p></a>
+    			</div>
+
+    			<div class="art-module">
+    				<a href="bottles_link.pdf" target="_blank" class="art art-tile">
+      				<img class="art-image" src="thumbnail_bottles.PNG" alt="art-work"/>
+      				<p class="grid-title">Bottles</p></a>
+    			</div>
+
+    			<div class="art-module">
+    				<a href="farmhouse_link.pdf" target="_blank" class="art art-tile">
+      				<img class="art-image" src="thumbnail_farmhouse.PNG" alt="art-work"/>
+      				<p class="grid-title">Farm House.</p></a>
+    			</div>
+
+    			<div class="art-module">
+    				<a href="fruit_link.pdf" target="_blank" class="art art-tile">
+      				<img class="art-image" src="thumbnail_fruit.PNG" alt="art-work"/>
+      				<p class="grid-title">Cherry</p></a>
+    			</div>
+
+    			<div class="art-module">
+    				<a href="Gatay_link.pdf" target="_blank" class="art art-tile">
+      				<img class="art-image" src="thumbnail_gatayUncle.PNG" alt="art-work"/>
+      				<p class="grid-title">Man pushing bicycle.</p></a>
+    			</div>
+
+    			<div class="art-module">
+    				<a href="lotaa_link.pdf" target="_blank" class="art art-tile">
+      				<img class="art-image" src="thumbnail_lotaa.PNG" alt="art-work"/>
+      				<p class="grid-title">Metal Jar.</p></a>
+    			</div>
+
+    			<div class="art-module">
+    				<a href="modern_link.pdf" target="_blank" class="art art-tile">
+      				<img class="art-image" src="thumbnail_modern.PNG" alt="art-work"/>
+      				<p class="grid-title">Modern House.</p></a>
+    			</div>
+
+    			<div class="art-module">
+    				<a href="mugdotart_link.pdf" target="_blank" class="art art-tile">
+      				<img class="art-image" src="thumbnail_mugdotart.PNG" alt="art-work"/>
+      				<p class="grid-title">Mug Dot Art.</p></a>
+    			</div>
+
+    			<div class="art-module">
+    				<a href="mugs_link.pdf" target="_blank" class="art art-tile">
+      				<img class="art-image" src="thumbnail_mug.PNG" alt="art-work"/>
+      				<p class="grid-title">Mugs and bottles Art.</p></a>
+    			</div>
+
+    			<div class="art-module">
+    				<a href="mugsdark_link.pdf" target="_blank" class="art art-tile">
+      				<img class="art-image" src="thumbnail_mugsDark.PNG" alt="art-work"/>
+      				<p class="grid-title">Mugs and bottles Dark</p></a>
+    			</div>
+
+    			 <div class="art-module">
+    				<a href="shapes_link.pdf" target="_blank" class="art art-tile">
+      				<img class="art-image" src="thumbnail_shapes.PNG" alt="art-work"/>
+      				<p class="grid-title">Shapes Art</p></a>
+    			</div>
+
+    			 <div class="art-module">
+    				<a href="teacup_link.pdf" target="_blank" class="art art-tile">
+      				<img class="art-image" src="thumbnail_teacup.PNG" alt="art-work"/>
+      				<p class="grid-title">Tea Cup</p></a>
+    			</div>
+
+  			</div>
+	</section>
+<!-- END ARTWORK SECTION -->
+
+<!-- START FOOTER SECTION -->
+	<footer>
+	  <p>&copy;Rob Thapa 2020.</p>
+	</footer>
+<!-- END FOOTER SECTION -->
+	</body>
+</html>
