@@ -104,6 +104,26 @@ section > p, li {
     color: var(--main-lightgray);
     text-shadow: 1px 1px 2px #000;}
 
+ /*clock*/
+.time {
+  font-family: 'Syncopate', sans-serif;
+    color: #fff;
+    padding-top: 1.5rem;
+    text-align: center;
+    width: auto;
+}
+
+.hms {
+    font-size: 48pt;
+    font-weight: 200;
+}
+.ampm {
+    font-size: 12pt;
+}
+.date {
+    font-size: 10pt;
+}    
+
 /* nav */
 #welcome-section,
 #projects,
