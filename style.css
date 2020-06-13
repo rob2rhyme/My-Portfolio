@@ -334,7 +334,7 @@ z-index: 1;
 .projects-grid {
   /* Grid Fallback */
   margin: 50px auto;
-  width: 80%;
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -361,7 +361,7 @@ z-index: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
-  width: 100%;
+  width: 95%;
   max-width: 1280px;
   margin: 50px auto;
   margin-bottom: 6rem;
