@@ -26,6 +26,12 @@ aside h1{
               inset -5px -5px 5px rgba(255, 255, 255, 0.2),
               inset 5px 5px 5px rgba(0,0,0,0.1);}
 
+ /*clock*/
+ canvas {
+	height: 110px;
+	width: auto;
+}
+
 /* Base reset */
 * {
     margin: 0;
