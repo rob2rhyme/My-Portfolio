@@ -535,8 +535,9 @@ footer > p,
 }
 
 .cert-module:hover, .project-module:hover, .art-module:hover{
-background: var(--main-purple);
-}
+	background: var(--main-purple);
+	padding: 15px;
+	transition: 0.3s;}
 
 /*scrollbar*/
 /* width */
