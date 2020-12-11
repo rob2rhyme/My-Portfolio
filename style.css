@@ -59,6 +59,11 @@ html {
 
 /* Base styles */
 
+.resume_button {
+ /* color: var(--main-purple); */
+ color: var(--main-orange);
+}
+
 body {
     background-image: url(forportfolio.svg);
     background-repeat: no-repeat;
